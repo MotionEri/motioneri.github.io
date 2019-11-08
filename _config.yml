@@ -21,11 +21,14 @@ encoding: utf-8
 markdown:  kramdown
 permalink: pretty
 paginate:  11
-gems: [jekyll-paginate]
+
 
 sass:
   style: compressed
 
+gems:
+  - jekyll-paginate
+  - jekyll/tagging
 
 include:
   - _pages
