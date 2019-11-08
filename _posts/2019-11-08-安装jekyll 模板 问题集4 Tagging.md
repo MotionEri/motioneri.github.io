@@ -1,13 +1,14 @@
 ---
 layout: post
-title: 安装jekyll 模板 问题集3
+title: 安装jekyll 模板 问题集3 Tagging
+featured: true
 author: ERI
-tags: [前端, jekyll, blog, issue]
+tags: [jekyll, 前端, blog, tagging, issue]
 image: '/images/posts/8.jpg'
 ---
 
-but you haven't included the `jekyll-paginate` gem
+目前这个主题 Tagging部分是没法使用的
 
-这个问题没能解决，但是神奇的是上传到Github 后，问题被解决了
 
-后来有搜到可能是一个bug，发生在windows环境里
+
+点击文章里的tag 会跳转到Page Not Found
