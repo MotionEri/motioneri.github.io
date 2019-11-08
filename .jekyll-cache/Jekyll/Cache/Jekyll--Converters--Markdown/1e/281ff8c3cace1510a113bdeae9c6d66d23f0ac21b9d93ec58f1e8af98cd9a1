@@ -1,0 +1,6 @@
+I"<p>but you haven’t included the <code class="highlighter-rouge">jekyll-paginate</code> gem</p>
+
+<p>这个问题没能解决，但是神奇的是上传到Github 后，问题被解决了</p>
+
+<p>后来有搜到可能是一个bug，发生在windows环境里</p>
+:ET
