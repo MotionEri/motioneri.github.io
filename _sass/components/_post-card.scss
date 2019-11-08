@@ -1,87 +1,199 @@
-//---------------------------
-// Post Card
-//---------------------------
+/*------------------------------------*\
+  Components > Post Card
+\*------------------------------------*/
 
-.post-card {
-  margin-bottom: $line-height__medium;
-  padding-bottom: $line-height__medium;
+.c-post-card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: double($base-spacing-unit);
 
-  border-bottom: 1px solid $border-color;
-  text-align: center;
+  &-wrap {
+    display: flex;
+  }
+
+  &__media {
+    overflow: hidden;
+    background-color: $bg-gray;
+  }
 
   &__image {
-    margin-bottom: half($line-height__base);
-    transition: $base-transition-speed;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all $global-transition ease-in-out;
 
-    @media #{$medium-down} {
-      margin-bottom: half($line-height__medium);
+    &.js-fadein {
+      opacity: 0;
     }
+
+    &.is-inview {
+      opacity: 1;
+    }
+
+    &:before {
+      transition: $global-transition;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      content: '';
+      background-color: $color-black;
+      opacity: 0;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      width: 100%;
+      padding-bottom: 75%;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__tags {
+    float: left;
+    padding-left: half($base-spacing-unit);
+    margin-top: $base-spacing-unit + quarter($base-spacing-unit);
+    margin-bottom: half($base-spacing-unit) + quarter($base-spacing-unit) + half(quarter($base-spacing-unit));
+    border-left: 2px solid $color-brand;
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
+
+    a {
+      text-transform: uppercase;
+      color: $color-gray;
+      margin-right: quarter($base-spacing-unit);
+      margin-left: quarter($base-spacing-unit);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include attention() {
+        color: $color-text;
+      }
+    }
+  }
+
+  &__share {
+    float: right;
+    position: relative;
+    top: $base-spacing-unit - half(quarter($base-spacing-unit));
+    right: - quarter($base-spacing-unit);
+    opacity: 0;
+    transition: all $global-transition ease-in-out;
+  }
+
+  &__share-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+  }
+
+  &__title-link {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom $global-transition ease-in-out;
   }
 
   &__title {
-    line-height: $line-height__medium;
-    margin-top: 0;
+    clear: both;
+    margin-bottom: $base-spacing-unit - half(quarter($base-spacing-unit));
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    transition: $global-transition;
+  }
+
+  &__excerpt {
+    display: none;
     margin-bottom: 0;
-
-    a {
-      display: block;
-      border-bottom: none;
-      transition: $base-transition-speed;
-
-      &:hover { color: #a60505; }
-    }
+    color: $color-gray;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
   }
 
   &__meta {
-    margin-bottom: quarter($line-height__base);
-    font-size: $font-size__tiny;
-    line-height: $line-height__small;
-    color: $color__base--hover;
-
-    a { color: $color__base--hover; text-decoration: none; }
+    line-height: 1;
+    font-size: $font-size-tiny;
+    color: $color-gray;
+    text-transform: uppercase;
+    letter-spacing: $global-letter-spacing;
   }
 
-  &:hover {
-    .post-card__image {
-      opacity: 0.9;
+  &__author {
+    display: inline-block;
+
+    a {
+      color: $color-gray;
+
+      @include attention() {
+        color: $color-text;
+      }
     }
 
-    .post-card__title a { color: #a60505; }
+    &:before {
+      content: '/';
+      display: inline-block;
+      padding-left: quarter($base-spacing-unit);
+      margin-right: half($base-spacing-unit);
+    }
   }
 
   &--featured {
     &__icon {
       position: absolute;
-      bottom: quarter($line-height__base);
-      left: quarter($line-height__base);
-      fill: #fff;
+      bottom: $base-spacing-unit;
+      left: $base-spacing-unit;
+      fill: $color-white;
+      background-color: rgba($color-black, .05);
     }
   }
 
-  @media #{$large-up} {
-    margin-bottom: $line-height__base;
-    padding-bottom: $line-height__base;
+  @include attention() {
+    .c-post-card__image {
+      transform: scale(1.01);
+    }
+
+    .c-post-card__image:before {
+      opacity: .1;
+    }
+
+    .c-post-card__share {
+      opacity: 1;
+    }
+
+    .c-post-card__title-link {
+      color: $color-text;
+      border-bottom: 1px solid $color-brand;
+    }
   }
 }
 
-// Make post cards the same height
+// Home Page Second Post Card
 
-.post-list {
-  display: flex;
-  flex-wrap: wrap;
-
-  // Safari (iPad)
-  display: -webkit-flex;
-  -webkit-flex-wrap: wrap;
-
-  .post-card-wrap {
-    display: flex;
-
-    // Safari (iPad)
-    display: -webkit-flex;
+.c-post-card--half {
+  @include mq($from: desktop) {
+    .c-post-card__image:after {
+      padding-bottom: 118%;
+    }
   }
+}
 
-  .post-card {
-    width: 100%;
+// Home Page First Wide Post Card
+
+.c-post-card--first {
+  @include mq($from: desktop) {
+    .c-post-card__image:after {
+      padding-bottom: 56.25%;
+    }
   }
 }

@@ -2,24 +2,20 @@
 layout: default
 ---
 
-<div class="wrapper">
-  <div class="row row--full">
+{% include page-hero.html %}
 
-    <div class="column column--center medium-12 large-12">
-      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--2by1" style="background-image: url({{ page.image | prepend: site.baseurl }})"></div>
-    </div>
+<div class='o-wrapper'>
 
-    <div class="column column--center medium-12 large-10">
-      <article class="post">
-        <header class="post__header">
-          <h2 class="post__title">{{ page.title }}</h2>
-        </header>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--3-4-m o-grid__col--2-3-l'>
+      <article class='c-post page'>
 
-        <div class="post-content">
+        <div class='c-content'>
           {{ content }}
         </div>
+
       </article>
     </div>
+  </div>
 
-  </div> <!-- row-->
-</div> <!-- wrapper -->
+</div>

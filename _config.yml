@@ -1,26 +1,31 @@
-# Welcome to Jekyll!
+# Welcome to Nubia Jekyll Theme!
 #
 # This config file is meant for settings that affect your whole blog, values
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-title:            East
-email:            your-email@domain.com
-description:      Minimal and Clean Blog Jekyll Theme
-baseurl:          '' # The subpath of your site, e.g. /blog
-url:              'http://east-jekyll.aspirethemes.com/' # The base hostname & protocol for your site
-github_username:  aspirethemes
-twitter_username: aspirethemes
+theme_version: 1.0.4
 
+# Site settings
+title:              MTC+
+logo:               # Logo image URL
+description:        Mind The Creative, Commerce, Charity, China
+baseurl:            '' # The subpath of your site, e.g. /blog
+url:                'https://mtc.plus' # The base hostname & protocol for your site
+twitter:            https://twitter.com/aspirethemes
+facebook:           https://www.facebook.com/aspirethemes
+instagram:          https://www.instagram.com/aspirethemes
+
+encoding: utf-8
 markdown:  kramdown
 permalink: pretty
-paginate:  12
+paginate:  11
+gems: [jekyll-paginate]
 
-gems:
-  - jekyll-paginate
-  - jekyll/tagging
+sass:
+  style: compressed
+
 
 include:
   - _pages
@@ -29,9 +34,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-
-sass:
-  style: compressed
 
 # Tags
 tag_page_dir:         tag
@@ -48,10 +50,10 @@ defaults:
 # Authors
 authors:
   ahmad:
-    name:             Ahmad Ajmi
-    bio:              Author & developer of Aspire Themes. Minimalist. I love creating clean and minimal websites.Technical writer at SitePoint.
-    gravatar:         https://s.gravatar.com/avatar/f83141edd9e6339e678648596a403fd5?s=150
-    email:            info@aspirethemes.com
-    website:          http://aspirethemes.com
-    github_username:  ahmadajmi
-    twitter_username: ahmadajmi
+    name:     Ahmad Ajmi
+    bio:      Author & developer of Aspire Themes. Minimalist. I love creating clean and minimal websites.Technical writer at SitePoint.
+    gravatar: https://s.gravatar.com/avatar/f83141edd9e6339e678648596a403fd5?s=150
+    email:    info@aspirethemes.com
+    website:  http://aspirethemes.com
+    github:   https://github.com/aspirethemes
+    twitter:  https://twitter.com/aspirethemes
