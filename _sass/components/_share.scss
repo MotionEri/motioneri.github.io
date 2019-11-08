@@ -1,44 +1,45 @@
-/*------------------------------------*\
-  Components > Share Icons
-\*------------------------------------*/
+//---------------------------
+// Share icons
+//---------------------------
 
-.c-share {
+.share-list {
   display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  padding: 0;
+  border: 1px solid $border-color;
+  margin-bottom: $line-height__base;
+  line-height: $line-height__small;
+  list-style: none;
 
-  &__item {
+  li {
     flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
     text-align: center;
+    margin: 0;
+    border-right: 1px solid $border-color;
 
-    &:not(:last-child) {
-      border-right: quarter($base-spacing-unit) solid $color-white;
-    }
+    &:last-child { border-right: 0; }
   }
 
   &__link {
     display: block;
-    padding: quarter($base-spacing-unit);
-    background-color: $bg-white;
-    transition: $global-transition;
+    padding: quarter($line-height__base);
 
-    @include attention() {
-      opacity: .8;
-    }
+    font-size: $font-size__small;
+    transition: $base-transition-speed;
 
-    &--twitter {
-      background-color: $color-twitter;
-    }
+    &:hover {
+      background-color: $grey-bg;
 
-    &--facebook {
-      background-color: $color-facebook;
-    }
-
-    &--pinterest {
-      background-color: $color-pinterest;
+      .share-list__icon--twitter  { fill: $twitter-brand; }
+      .share-list__icon--facebook { fill: $facebook-brand; }
+      .share-list__icon--google   { fill: $google-brand; }
     }
   }
 
-  &__icon {
-    vertical-align: middle;
-    fill: $color-white;
-  }
+  &__icon { fill: $color__base; }
+
+  @media #{$medium-down} { margin-bottom: $line-height__medium; }
 }

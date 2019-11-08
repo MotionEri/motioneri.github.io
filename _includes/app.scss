@@ -1,34 +1,24 @@
-// *------------------------------------*\
+//---------------------------
 // Main Style
-// *------------------------------------*/
+//---------------------------
 
-// Tools
-@import 'tools/_all';
+// Variables
+@import 'variables/_all';
 
+// Functions
+@import 'functions/_all';
 
-// Settings
-@import 'settings/_all';
-
-
-// Generic
-@import 'generic/_all';
-
-
-// Vendor
-@import 'vendor/_all';
-
-
-// Elements
-@import 'elements/_all';
-
-
-// Objects
-@import 'objects/_all';
-
+// Base
+@import 'base/_all';
 
 // Components
 @import 'components/_all';
 
+// Navigation
+@import 'navigation/_all';
 
-// Trumps
-@import 'trumps/_all';
+// Sections
+@import 'sections/_all';
+
+// Helpers
+@import 'helpers/_all';

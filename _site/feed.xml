@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MTC+</title>
-    <description>Mind The Creative, Commerce, Charity, China</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Nov 2019 17:05:14 +0800</pubDate>
-    <lastBuildDate>Fri, 08 Nov 2019 17:05:14 +0800</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <title>East</title>
+    <description>Minimal and Clean Blog Jekyll Theme</description>
+    <link>http://east-jekyll.aspirethemes.com//</link>
+    <atom:link href="http://east-jekyll.aspirethemes.com//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 08 Nov 2019 19:08:27 +0800</pubDate>
+    <lastBuildDate>Fri, 08 Nov 2019 19:08:27 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
 
     
       <item>
@@ -16,9 +16,9 @@
 
 &lt;p&gt;点击文章里的tag 会跳转到Page Not Found&lt;/p&gt;
 </description>
-        <pubDate>08 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging/</guid>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/08/05/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/05/</guid>
       </item>
     
       <item>
@@ -29,9 +29,9 @@
 
 &lt;p&gt;后来有搜到可能是一个bug，发生在windows环境里&lt;/p&gt;
 </description>
-        <pubDate>08 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%863/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%863/</guid>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/08/04/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/04/</guid>
       </item>
     
       <item>
@@ -47,20 +47,21 @@
 &lt;p&gt;这样才能正确显示&lt;/p&gt;
 
 </description>
-        <pubDate>08 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%862/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%862/</guid>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/08/03/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/03/</guid>
       </item>
     
       <item>
         <title>安装jekyll 模板 问题集1</title>
-        <description>&lt;h2 id=&quot;安装模板&quot;&gt;安装模板&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;section&quot;&gt;安装模板&lt;/h2&gt;
 
 &lt;p&gt;下载了一个jekyll 模板，以为直接覆盖原有文件夹后重新发布就可以上线了&lt;br /&gt;
 结果发现发布的时候出现这个错误&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Liquid Exception: Liquid error (line 16): Invalid GBK character &quot;\xE2&quot; on line 5 in /Users/motio/Documents/GitHub/motioneri.github.io/_layouts/default.html
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+  Liquid Exception: Liquid error (line 16): Invalid GBK character &quot;\xE2&quot; on line 5 in /Users/motio/Documents/GitHub/motioneri.github.io/_layouts/default.html
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;打开Default.html，逐一排查后并没有发现任何错误&lt;br /&gt;
 逐检查head.html，这是个头部文件，果然排查后发现这一段代码有问题&lt;/p&gt;
@@ -72,7 +73,7 @@
 &lt;br /&gt;
 &lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;编码问题&quot;&gt;编码问题&lt;/h2&gt;
+&lt;h2 id=&quot;section-1&quot;&gt;编码问题&lt;/h2&gt;
 &lt;p&gt;经过搜索后发现应该是编码问题，不知如何误以为文件是GBK编码&lt;br /&gt;
 后来发现这个Blog有提到 &lt;em&gt;改不了內建的 File.read ，就只能改 Sass 了&lt;/em&gt;
 https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
@@ -88,14 +89,16 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
 &lt;p&gt;解决方法是在yaml文件添加编码指向&lt;br /&gt;
 于是我在_config.yml 文件 添加了这句&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;encoding: utf-8
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+encoding: utf-8
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;一不做二不休，连css的文件我也加了编码&lt;br /&gt;
 找到generic和elements的文件夹，两个_all.scss都加上这句&lt;br /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@charset &quot;utf-8&quot;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+@charset &quot;utf-8&quot;;
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;重新刷新一下发布，好了&lt;br /&gt;
 没有错误了，服务器网址出来了&lt;br /&gt;&lt;/p&gt;
@@ -107,9 +110,9 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
 &lt;p&gt;后面再解决&lt;/p&gt;
 
 </description>
-        <pubDate>08 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%861/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%861/</guid>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/08/02/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/02/</guid>
       </item>
     
       <item>
@@ -132,9 +135,9 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
 &lt;p&gt;第四阶段：发布文章&lt;/p&gt;
 
 </description>
-        <pubDate>08 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/08/01/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/08/01/</guid>
+        <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/08/01/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/01/</guid>
       </item>
     
       <item>
@@ -145,9 +148,9 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
 
 &lt;p&gt;还有很多地方需要调整呢&lt;/p&gt;
 </description>
-        <pubDate>07 Nov 2019</pubDate>
-        <link>http://localhost:4000/2019/11/07/01/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/11/07/01/</guid>
+        <pubDate>Thu, 07 Nov 2019 00:00:00 +0800</pubDate>
+        <link>http://east-jekyll.aspirethemes.com//2019/11/07/01/</link>
+        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/07/01/</guid>
       </item>
     
 
@@ -160,13 +163,9 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
         
           <item>
             <title>About</title>
-            <description>&lt;p&gt;You love minimalism, want to be productive focusing only on the important things and want to take jekyll to the next level, Nubia is designed for you. Nubia focus on showing your content in a clean and simple way, focus on images, typography, and white space.&lt;/p&gt;
-
-&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyllrb.com&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.&lt;/p&gt;
+            <description>&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme&lt;/p&gt;
 </description>
-            <link>http://localhost:4000/about.html</link>
+            <link>http://east-jekyll.aspirethemes.com//about.html</link>
           </item>
         
       
@@ -178,245 +177,31 @@ https://www.twblogs.net/a/5b8dfe2d2b71771883421b53&lt;/p&gt;
       
         
           <item>
-            <title>Style Guide</title>
-            <description>At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation.
-
-Graphic design is the paradise of **individuality**, *eccentricity*, heresy, abnormality, hobbies, and humors. — George Santayana.
-
----
-
-# Simple default styles for headings
-
-## Simple default styles for headings
-
-### Simple default styles for headings
-
-#### Simple default styles for headings
-
-##### Simple default styles for headings
-
-###### Simple default styles for headings
-
----
-
-* Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-* Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor.
-* Donec nibh massa, rutrum a sollicitudin eu, lacinia in lorem.
-
----
-
-1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
-2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in.
-3. Donec nibh massa, rutrum a sollicitudin eu.
-
----
-
-&gt; Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. — George Santayana
-
----
-
-&lt;p&gt;You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.&lt;/p&gt;
-&lt;p&gt;&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;&lt;u&gt;This line of text will render as underlined&lt;/u&gt;&lt;/p&gt;
-&lt;p&gt;&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;This line rendered as bold text.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;This line rendered as italicized text.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;abbr title=&quot;attribute&quot;&gt;attr&lt;/abbr&gt;&lt;/p&gt;
-&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot; class=&quot;initialism&quot;&gt;HTML&lt;/abbr&gt;&lt;/p&gt;
-
----
-
-### Responsive Tables
-
-&lt;div class='responsive-table'&gt;
-&lt;table&gt;
-      &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;col&quot;&gt;#&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-          &lt;th scope=&quot;col&quot;&gt;Heading&lt;/th&gt;
-        &lt;/tr&gt;
-      &lt;/thead&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-          &lt;td&gt;Cell&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-&lt;/div&gt;
-
----
-
-### YouTube Responsive Embed
-
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/nuwjUZCSB2Y?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; encrypted-media&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
----
-
-### Vimeo Responsive Embed
-
-&lt;iframe src=&quot;https://player.vimeo.com/video/212114694?title=0&amp;byline=0&amp;portrait=0&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
----
-
-### TED Responsive Embed
-
-&lt;iframe src=&quot;https://embed.ted.com/talks/ted_halstead_a_climate_solution_where_all_sides_can_win&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt;
-
----
-
-### Twitch Responsive Embed
-
-&lt;iframe src=&quot;https://player.twitch.tv/?autoplay=false&amp;video=v248755437&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;true&quot; scrolling=&quot;no&quot; height=&quot;378&quot; width=&quot;620&quot;&gt;&lt;/iframe&gt;
-
----
-
-### SoundCloud Embed
-
-&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29738591&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
-
----
-
-### CodePen Embed
-
-&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWvpRo&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;kharrop&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Referral Form&quot; class=&quot;codepen&quot;&gt;&lt;/p&gt;
-&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
-
----
-
-### Instagram Embed
-
-  &lt;blockquote class=&quot;instagram-media&quot; data-instgrm-permalink=&quot;https://www.instagram.com/p/BhFTg6uhNRi/&quot; data-instgrm-version=&quot;8&quot; style=&quot; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);&quot;&gt;&lt;div style=&quot;padding:8px;&quot;&gt; &lt;div style=&quot; background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;&quot;&gt; &lt;div style=&quot; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;&quot;&gt;&lt;a href=&quot;https://www.instagram.com/p/BhFTg6uhNRi/&quot; style=&quot; color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;&quot; target=&quot;_blank&quot;&gt;A post shared by Ahmad Ajmi (@ahmadajme)&lt;/a&gt; on &lt;time style=&quot; font-family:Arial,sans-serif; font-size:14px; line-height:17px;&quot; datetime=&quot;2018-04-02T21:18:58+00:00&quot;&gt;Apr 2, 2018 at 2:18pm PDT&lt;/time&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt; &lt;script async defer src=&quot;//www.instagram.com/embed.js&quot;&gt;&lt;/script&gt;
-
----
-
-### Twitter Embed
-
-&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Very excited to release Nubia, a new Responsive &amp;amp; Multipurpose Ghost Theme 🚀🚀&lt;a href=&quot;https://t.co/LATsykOLDJ&quot;&gt;https://t.co/LATsykOLDJ&lt;/a&gt; &lt;a href=&quot;https://t.co/zG2PFVwe7G&quot;&gt;pic.twitter.com/zG2PFVwe7G&lt;/a&gt;&lt;/p&gt;&amp;mdash; Aspire Themes (@aspirethemes) &lt;a href=&quot;https://twitter.com/aspirethemes/status/944865769300660225?ref_src=twsrc%5Etfw&quot;&gt;December 24, 2017&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-
----
-
-### Responsive &amp; Medium Style Image Zoom
-
-Click the image to zoom it :)
-
-![styleguide](/images/posts/22.jpg)
-
----
-
-### Syntax Highlighting
-
-{% highlight js %}
-'use strict';
-var markdown = require('markdown').markdown;
-function Editor(input, preview) {
-  this.update = function() {
-    preview.innerHTML = markdown.toHTML(input.value);
-  };
-  input.editor = this;
-  this.update();
-}
-{% endhighlight %}
-
-You can add inline code just like this, E.g. `.code { color: #fff; }`
-
-{% highlight css %}
-pre {
-  background-color: #f4f4f4;
-  max-width: 100%;
-  overflow: auto;
-}
-{% endhighlight %}
-
----
-
-### GitHub gist Embed
-
-&lt;script src=&quot;https://gist.github.com/ahmadajmi/dbb4f713317721668bcbc39420562afc.js&quot;&gt;&lt;/script&gt;
-
----
-
-### Input Style
-
-&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot;&gt;
-
----
-
-### Buttons Style
-
-&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
-
----
-
-{% highlight html %}
-&lt;button class='c-btn'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
-{% endhighlight %}
-
----
-
-&lt;button class='c-btn c-btn--active c-btn--small'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn c-btn--active'&gt;Button&lt;/button&gt;
-
-&lt;button class='c-btn c-btn--active c-btn--full'&gt;Button&lt;/button&gt;
-
----
-
-{% highlight html %}
-&lt;button class='c-btn c-btn--active'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn c-btn--active c-btn--small'&gt;Button&lt;/button&gt;
-&lt;button class='c-btn c-btn--active c-btn--full'&gt;Button&lt;/button&gt;
-{% endhighlight %}</description>
-            <link>http://localhost:4000/style-guide.html</link>
+            <title>TEST</title>
+            <description>test test</description>
+            <link>http://east-jekyll.aspirethemes.com//test.html</link>
           </item>
         
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       

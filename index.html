@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<div class='o-wrapper'>
-  <div class='o-grid js-grid'>
-    {% for post in paginator.posts %}
-      {% include post-card.html %}
-    {% endfor %}
+<div class="wrapper">
+
+  <div class="row row--full">
+    <div class="post-list">
+      {% for post in paginator.posts %}
+        {% include post-card.html %}
+      {% endfor %}
+    </div>
   </div>
 
-  <div class='o-grid'>
+  <div class="row row--full">
     {% include pagination.html %}
   </div>
+
 </div>
