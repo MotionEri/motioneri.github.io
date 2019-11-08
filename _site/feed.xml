@@ -5,10 +5,23 @@
     <description>Mind The Creative, Commerce, Charity, China</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Nov 2019 15:55:07 +0800</pubDate>
-    <lastBuildDate>Fri, 08 Nov 2019 15:55:07 +0800</lastBuildDate>
+    <pubDate>Fri, 08 Nov 2019 16:57:38 +0800</pubDate>
+    <lastBuildDate>Fri, 08 Nov 2019 16:57:38 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
 
+    
+      <item>
+        <title>安装jekyll 模板 问题集3</title>
+        <description>&lt;p&gt;but you haven’t included the &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll-paginate&lt;/code&gt; gem&lt;/p&gt;
+
+&lt;p&gt;这个问题没能解决，但是神奇的是上传到Github 后，问题被解决了&lt;/p&gt;
+
+&lt;p&gt;后来有搜到可能是一个bug，发生在windows环境里&lt;/p&gt;
+</description>
+        <pubDate>08 Nov 2019</pubDate>
+        <link>http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/11/08/%E5%AE%89%E8%A3%85jekyll-%E6%A8%A1%E6%9D%BF-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging/</guid>
+      </item>
     
       <item>
         <title>安装jekyll 模板 问题集3</title>
@@ -404,6 +417,20 @@ pre {
 &lt;button class='c-btn c-btn--active c-btn--full'&gt;Button&lt;/button&gt;
 {% endhighlight %}</description>
             <link>http://localhost:4000/style-guide.html</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>About</title>
+            <description>You love minimalism, want to be productive focusing only on the important things and want to take jekyll to the next level, Nubia is designed for you. Nubia focus on showing your content in a clean and simple way, focus on images, typography, and white space.
+
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+
+Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.</description>
+            <link>http://localhost:4000/tag.html</link>
           </item>
         
       
