@@ -1,14 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>East</title>
-    <description>Minimal and Clean Blog Jekyll Theme</description>
-    <link>http://east-jekyll.aspirethemes.com//</link>
-    <atom:link href="http://east-jekyll.aspirethemes.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 08 Nov 2019 19:08:27 +0800</pubDate>
-    <lastBuildDate>Fri, 08 Nov 2019 19:08:27 +0800</lastBuildDate>
+    <title>MTC+</title>
+    <description>Mind The Creative, Commerce, Charity, China</description>
+    <link>https://motioneri.github.io//</link>
+    <atom:link href="https://motioneri.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 29 Dec 2019 00:27:01 +0800</pubDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:27:01 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
 
+    
+      <item>
+        <title>Jekyll 目前问题汇总</title>
+        <description>&lt;h1 id=&quot;jekyll-&quot;&gt;Jekyll 目前问题汇总&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tagging 系统无效&lt;/li&gt;
+  &lt;li&gt;分页未完成设置&lt;/li&gt;
+  &lt;li&gt;Social Media ICON 需要更新&lt;/li&gt;
+  &lt;li&gt;Page Not Found 模板需要更新&lt;/li&gt;
+  &lt;li&gt;搜索不支持中文&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
+        <link>https://motioneri.github.io//2019/12/29/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/01/</guid>
+      </item>
+    
+      <item>
+        <title>安装jekyll 模板 问题集3 Tagging</title>
+        <description>&lt;p&gt;第一阶段：开通Blog&lt;/p&gt;
+
+&lt;p&gt;第二阶段：打通文章系统 需要安装Ruby 需要通过Ruby 安装Jekyll 检查是否安装成功：jekyll -v， jekyll 4.0.0&lt;/p&gt;
+
+&lt;p&gt;第三阶段：美化Blog&lt;/p&gt;
+
+&lt;p&gt;第四阶段：发布文章&lt;/p&gt;
+
+&lt;p&gt;是不是很想要一个博客&lt;/p&gt;
+
+&lt;p&gt;但是独立建站又麻烦，又费钱&lt;/p&gt;
+
+&lt;p&gt;那些免费的广告又多，又不美观&lt;/p&gt;
+
+&lt;p&gt;想轻度折腾，不想太浪费时间&lt;/p&gt;
+
+&lt;p&gt;那就跟我一起尝试一下jekyll 吧&lt;/p&gt;
+
+&lt;p&gt;### 建立Repository&lt;/p&gt;
+
+&lt;p&gt;我们的目的是利用Github 的免费空间把blog 部署上去&lt;/p&gt;
+
+&lt;p&gt;首先在Github 新增一个Repository 用作Blog&lt;/p&gt;
+
+&lt;p&gt;然后安装Github Desktop&lt;/p&gt;
+
+&lt;p&gt;我们通过Github Desktop 把网站Clone 到本地&lt;/p&gt;
+
+&lt;p&gt;同步到Github&lt;/p&gt;
+
+&lt;p&gt;连接域名到Github Pages：https://motioneri.github.io/&lt;/p&gt;
+
+&lt;p&gt;### 部署网站&lt;/p&gt;
+
+&lt;p&gt;我们打开Start Command Prompt with Rugy&lt;/p&gt;
+
+&lt;p&gt;利用cd 指令跳转到网站在本地的文件夹&lt;/p&gt;
+
+&lt;p&gt;现在网站的文件夹在C:\Users\motio\Documents\GitHub\motioneri.github.io&lt;/p&gt;
+
+&lt;p&gt;我们输入一下cd 指令&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;cd Documents\GitHub\motioneri.github.io&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;这时候&lt;/p&gt;
+
+&lt;p&gt;指令会变成&lt;/p&gt;
+
+&lt;p&gt;C:\Users\motio\Documents\GitHub\motioneri.github.io&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;我们已经跳转到网站所在的文件夹了&lt;/p&gt;
+
+&lt;p&gt;接下来我们需要安装一些套件&lt;/p&gt;
+
+&lt;p&gt;输入&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;bundle install&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;这句命令是安装一些套件的&lt;/p&gt;
+
+&lt;p&gt;过程需要蛮久的，先放着不管去忙别的&lt;/p&gt;
+
+&lt;p&gt;我每次都需要等个20分钟左右&lt;/p&gt;
+
+&lt;p&gt;完成后会提示安装了一堆套件&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;evernotecid://FE901839-E487-4D3D-89F9-2C82D66112F0/appyinxiangcom/17534957/ENResource/p15219&quot; alt=&quot;79be857d9a0ca87b56f4d822b31569d7.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;bundle exec jekyll serve&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;这句命令是用来启动服务器&lt;/p&gt;
+
+&lt;p&gt;一旦成功，会看到以下提示&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;Configuration file: C:/Users/motio/Documents/GitHub/motioneri.github.io/_config.yml&lt;/p&gt;
+
+&lt;p&gt;Source: C:/Users/motio/Documents/GitHub/motioneri.github.io&lt;/p&gt;
+
+&lt;p&gt;Destination: C:/Users/motio/Documents/GitHub/motioneri.github.io/_site&lt;/p&gt;
+
+&lt;p&gt;Incremental build: disabled. Enable with –incremental&lt;/p&gt;
+
+&lt;p&gt;Generating…&lt;/p&gt;
+
+&lt;p&gt;done in 1.893 seconds.&lt;/p&gt;
+
+&lt;p&gt;Please add the following to your Gemfile to avoid polling for changes:&lt;/p&gt;
+
+&lt;p&gt;gem ‘wdm’, ‘&amp;gt;= 0.1.0’ if Gem.win_platform?&lt;/p&gt;
+
+&lt;p&gt;Auto-regeneration: enabled for ‘C:/Users/motio/Documents/GitHub/motioneri.github.io’&lt;/p&gt;
+
+&lt;p&gt;Configuration file: C:/Users/motio/Documents/GitHub/motioneri.github.io/_config.yml&lt;/p&gt;
+
+&lt;p&gt;Server address: http://127.0.0.1:4000/&lt;/p&gt;
+
+&lt;p&gt;Server running… press ctrl-c to stop.&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;我们可以点击服务器连接进入网站&lt;a href=&quot;http://127.0.0.1:4000&quot;&gt;http://127.0.0.1:4000&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;正常情况下应该能看到网站了&lt;/p&gt;
+
+&lt;p&gt;### Post&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;存放位置&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;_posts 文件夹&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;文章命名和格式&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;文章可以识别Markdown格式&lt;/p&gt;
+
+&lt;p&gt;后缀名为.md&lt;/p&gt;
+
+&lt;p&gt;档案命名必须为：YEAR-MONTH-DAY-title.MARKUP&lt;/p&gt;
+
+&lt;p&gt;我花了一整天排查错误，最后发现原来是命名出问题导致系统无法识别已存在文件夹里的文章&lt;/p&gt;
+
+&lt;p&gt;教学出处在这里：&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/docs/posts/&quot;&gt;https://jekyllrb.com/docs/posts/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;模板&lt;/p&gt;
+
+&lt;p&gt;jekyll 模板 EAST&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Nov 2019 00:00:00 +0800</pubDate>
+        <link>https://motioneri.github.io//2019/11/10/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/10/01/</guid>
+      </item>
     
       <item>
         <title>安装jekyll 模板 问题集3 Tagging</title>
@@ -17,8 +187,8 @@
 &lt;p&gt;点击文章里的tag 会跳转到Page Not Found&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/08/05/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/05/</guid>
+        <link>https://motioneri.github.io//2019/11/08/05/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/05/</guid>
       </item>
     
       <item>
@@ -30,8 +200,8 @@
 &lt;p&gt;后来有搜到可能是一个bug，发生在windows环境里&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/08/04/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/04/</guid>
+        <link>https://motioneri.github.io//2019/11/08/04/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/04/</guid>
       </item>
     
       <item>
@@ -48,8 +218,8 @@
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/08/03/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/03/</guid>
+        <link>https://motioneri.github.io//2019/11/08/03/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/03/</guid>
       </item>
     
       <item>
@@ -111,8 +281,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/08/02/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/02/</guid>
+        <link>https://motioneri.github.io//2019/11/08/02/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/02/</guid>
       </item>
     
       <item>
@@ -136,8 +306,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/08/01/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/08/01/</guid>
+        <link>https://motioneri.github.io//2019/11/08/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/01/</guid>
       </item>
     
       <item>
@@ -149,8 +319,8 @@ encoding: utf-8
 &lt;p&gt;还有很多地方需要调整呢&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Nov 2019 00:00:00 +0800</pubDate>
-        <link>http://east-jekyll.aspirethemes.com//2019/11/07/01/</link>
-        <guid isPermaLink="true">http://east-jekyll.aspirethemes.com//2019/11/07/01/</guid>
+        <link>https://motioneri.github.io//2019/11/07/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/07/01/</guid>
       </item>
     
 
@@ -165,7 +335,7 @@ encoding: utf-8
             <title>About</title>
             <description>&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme&lt;/p&gt;
 </description>
-            <link>http://east-jekyll.aspirethemes.com//about.html</link>
+            <link>https://motioneri.github.io//about.html</link>
           </item>
         
       
@@ -179,7 +349,7 @@ encoding: utf-8
           <item>
             <title>TEST</title>
             <description>test test</description>
-            <link>http://east-jekyll.aspirethemes.com//test.html</link>
+            <link>https://motioneri.github.io//test.html</link>
           </item>
         
       
