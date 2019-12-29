@@ -1,0 +1,44 @@
+---
+layout: post
+title: Low Poly 学习 Day 1
+author: ERI
+tags: [low poly, c4d, modelling, 建模]
+image: '/images/posts/20191229-005143.jpg'
+---
+
+# Low Poly 学习 Day 1
+
+今天学习在C4D使用Low Poly 风格建立一个小树的场景
+
+这是最终效果图
+
+![lowpoly-2019-12-28-224026](/Users/eri/Documents/GitHub/motioneri.github.io/images/2019/12/lowpoly-2019-12-28-224026.jpg)
+
+Renderer: Built in<br>Software: C4D r21<br>学习教程: https://www.youtube.com/watch?v=OZ4wos3VYTo&t=682s<br>
+
+这里记录一下学习过程
+
+## 学习过程
+
+1. 建立树木
+2. 建立小石头小草
+3. 打灯
+4. 上materials
+5. bend & Twist
+6. 渲染
+
+## 学习要点
+
+- 利用Knife Tool Loop Cut切出树杆
+- 点击C 修改模型
+- 利用Melt Object 把Platonic 做的树叶做出随机感
+- 在Polygon Mode 时，在viewpoint 右键点击空白处，选择Brush，可以修改模型，用法跟PS Liquify 差不多
+- 使用Cloner批量复制出更多的小石头小草
+- 利用Random做出随机感
+- 增加Ambient Occlusion
+- 灯光离物件越贴近，Shadow越柔，离物件越远，Shaodw越硬
+- 上Materials
+- Camera点击旁边笑白框，会切换至该Camera
+- 在Camera右键点击Rigging Tags > Protection，可以锁定镜头，不给改参数
+- 点击CMD+R 渲染 
+

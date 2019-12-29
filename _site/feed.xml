@@ -5,10 +5,75 @@
     <description>Mind The Creative, Commerce, Charity, China</description>
     <link>https://motioneri.github.io//</link>
     <atom:link href="https://motioneri.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 29 Dec 2019 00:27:01 +0800</pubDate>
-    <lastBuildDate>Sun, 29 Dec 2019 00:27:01 +0800</lastBuildDate>
+    <pubDate>Sun, 29 Dec 2019 02:32:30 +0800</pubDate>
+    <lastBuildDate>Sun, 29 Dec 2019 02:32:30 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
 
+    
+      <item>
+        <title>Low Poly 学习 Day 1</title>
+        <description>&lt;h1 id=&quot;low-poly--day-1&quot;&gt;Low Poly 学习 Day 1&lt;/h1&gt;
+
+&lt;p&gt;今天学习在C4D使用Low Poly 风格建立一个小树的场景&lt;/p&gt;
+
+&lt;p&gt;这是最终效果图&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/eri/Documents/GitHub/motioneri.github.io/images/2019/12/lowpoly-2019-12-28-224026.jpg&quot; alt=&quot;lowpoly-2019-12-28-224026&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Renderer: Built in&lt;br /&gt;Software: C4D r21&lt;br /&gt;学习教程: https://www.youtube.com/watch?v=OZ4wos3VYTo&amp;amp;t=682s&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;这里记录一下学习过程&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;学习过程&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;建立树木&lt;/li&gt;
+  &lt;li&gt;建立小石头小草&lt;/li&gt;
+  &lt;li&gt;打灯&lt;/li&gt;
+  &lt;li&gt;上materials&lt;/li&gt;
+  &lt;li&gt;bend &amp;amp; Twist&lt;/li&gt;
+  &lt;li&gt;渲染&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;学习要点&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;利用Knife Tool Loop Cut切出树杆&lt;/li&gt;
+  &lt;li&gt;点击C 修改模型&lt;/li&gt;
+  &lt;li&gt;利用Melt Object 把Platonic 做的树叶做出随机感&lt;/li&gt;
+  &lt;li&gt;在Polygon Mode 时，在viewpoint 右键点击空白处，选择Brush，可以修改模型，用法跟PS Liquify 差不多&lt;/li&gt;
+  &lt;li&gt;使用Cloner批量复制出更多的小石头小草&lt;/li&gt;
+  &lt;li&gt;利用Random做出随机感&lt;/li&gt;
+  &lt;li&gt;增加Ambient Occlusion&lt;/li&gt;
+  &lt;li&gt;灯光离物件越贴近，Shadow越柔，离物件越远，Shaodw越硬&lt;/li&gt;
+  &lt;li&gt;上Materials&lt;/li&gt;
+  &lt;li&gt;Camera点击旁边笑白框，会切换至该Camera&lt;/li&gt;
+  &lt;li&gt;在Camera右键点击Rigging Tags &amp;gt; Protection，可以锁定镜头，不给改参数&lt;/li&gt;
+  &lt;li&gt;点击CMD+R 渲染&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
+        <link>https://motioneri.github.io//2019/12/29/Low-Poly-%E5%AD%A6%E4%B9%A0-Day-1/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/Low-Poly-%E5%AD%A6%E4%B9%A0-Day-1/</guid>
+      </item>
+    
+      <item>
+        <title>Jekyll 目前问题汇总</title>
+        <description>&lt;h1 id=&quot;jekyll-&quot;&gt;Jekyll 目前问题汇总&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tagging 系统推送Github 后无效&lt;/li&gt;
+  &lt;li&gt;分页未完成设置&lt;/li&gt;
+  &lt;li&gt;Social Media ICON 需要更新&lt;/li&gt;
+  &lt;li&gt;Page Not Found 模板需要更新&lt;/li&gt;
+  &lt;li&gt;搜索不支持中文&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
+        <link>https://motioneri.github.io//2019/12/29/Jekyll-%E7%9B%AE%E5%89%8D%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/Jekyll-%E7%9B%AE%E5%89%8D%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</guid>
+      </item>
     
       <item>
         <title>Jekyll 目前问题汇总</title>
@@ -185,6 +250,8 @@
         <description>&lt;p&gt;目前这个主题 Tagging部分是没法使用的&lt;/p&gt;
 
 &lt;p&gt;点击文章里的tag 会跳转到Page Not Found&lt;/p&gt;
+
+&lt;p&gt;在本地可以生效，但是上传到Github 后缺不能跳转&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
         <link>https://motioneri.github.io//2019/11/08/05/</link>
@@ -205,7 +272,7 @@
       </item>
     
       <item>
-        <title>安装jekyll 模板 问题集2</title>
+        <title>插图显示问题 问题集2</title>
         <description>&lt;p&gt;插图的话想在本地服务器能看到正确的显示
 路径必须开头为 \&lt;/p&gt;
 
@@ -215,6 +282,10 @@
 必须在路径前加上 \   ，变成\images\posts\image-20191108134341430.png&lt;/p&gt;
 
 &lt;p&gt;这样才能正确显示&lt;/p&gt;
+
+&lt;p&gt;要注意修改后图片在本地编辑器就没办法显示正确了&lt;/p&gt;
+
+&lt;p&gt;只能二选一咯&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
@@ -287,22 +358,45 @@ encoding: utf-8
     
       <item>
         <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;第一阶段：开通Blog&lt;/p&gt;
+        <description>&lt;h2 id=&quot;jekyll&quot;&gt;欢迎来到Jekyll&lt;/h2&gt;
 
-&lt;p&gt;新增一个Repository 用作Blog
-安装Github Desktop
-安装一个Jekyll Theme for Github Pages
-同步到Github
-连接域名到Github Pages：https://motioneri.github.io/&lt;/p&gt;
+&lt;p&gt;一直很想要一个窗口，书写自己的东西，别人偶尔也能访问一下&lt;/p&gt;
 
-&lt;p&gt;第二阶段：打通文章系统
-需要安装Ruby
-需要通过Ruby 安装Jekyll
-检查是否安装成功：jekyll -v， jekyll 4.0.0&lt;/p&gt;
+&lt;p&gt;用过公共博客，建过Wordpress，后来一直开通那些书写的服务，一直在不同地方写东西&lt;/p&gt;
 
-&lt;p&gt;第三阶段：美化Blog&lt;/p&gt;
+&lt;p&gt;上个月发现原来现在的blog 开通已经变得非常简单&lt;/p&gt;
 
-&lt;p&gt;第四阶段：发布文章&lt;/p&gt;
+&lt;p&gt;注册一个Github Pages&lt;/p&gt;
+
+&lt;p&gt;安装一个Jekyll，直接通过Github 推送，连服务器都省了&lt;/p&gt;
+
+&lt;p&gt;所以趁着空余时间，建了一个玩玩看&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll-&quot;&gt;开通Jekyll 过程&lt;/h3&gt;
+
+&lt;p&gt;第一阶段：开通Blog&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在Github新增一个Repository 用作Blog&lt;/li&gt;
+  &lt;li&gt;安装Github Desktop&lt;/li&gt;
+  &lt;li&gt;安装一个Jekyll Theme for Github Pages&lt;/li&gt;
+  &lt;li&gt;同步到Github&lt;/li&gt;
+  &lt;li&gt;连接域名到Github Pages：https://motioneri.github.io/&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第二阶段：打通文章系统&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;需要安装Ruby&lt;/li&gt;
+  &lt;li&gt;需要通过Ruby 安装Jekyll&lt;/li&gt;
+  &lt;li&gt;检查是否安装成功：jekyll -v， jekyll 4.0.0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;第三阶段：发布文章&lt;/p&gt;
+
+&lt;p&gt;完成～&lt;/p&gt;
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
@@ -352,6 +446,12 @@ encoding: utf-8
             <link>https://motioneri.github.io//test.html</link>
           </item>
         
+      
+    
+      
+    
+      
+    
       
     
       
