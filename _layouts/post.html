@@ -29,12 +29,14 @@ layout: default
           {{ content }}
           <div class="post__tags">
             {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a href="/tag/{{ tag_name | replace: ' ', '_' }}">{{ tag_name }}</a>
             {% endfor %}
           </div>
         </div>
 
         <hr>
+
 
         {% if page.author %}
           {% include author.html %}
