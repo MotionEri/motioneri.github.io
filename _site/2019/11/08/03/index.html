@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>插图显示问题 问题集2</title>
-  <meta name="description" content="插图的话想在本地服务器能看到正确的显示路径必须开头为 \">
+  <title>Jekyll 问题集2 插图显示问题</title>
+  <meta name="description" content="在本地的Markdown编辑器插入图片">
   <link rel="canonical" href="https://motioneri.github.io//2019/11/08/03/">
   <link rel="alternate" type="application/rss+xml" title="MTC+" href="https://motioneri.github.io//feed.xml">
 
@@ -220,22 +220,31 @@
         
 
         <header class="post__header">
-          <h2 class="post__title" itemprop="name headline">插图显示问题 问题集2</h2>
+          <h2 class="post__title" itemprop="name headline">Jekyll 问题集2 插图显示问题</h2>
           <time class="post__date" datetime="2019-11-08T00:00:00+08:00" itemprop="datePublished">Nov 8, 2019</time>
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <p>插图的话想在本地服务器能看到正确的显示
-路径必须开头为 \</p>
+          <p>在本地的Markdown编辑器插入图片</p>
 
-<p><img src="\images\posts\image-20191108140541466.png" alt="image-20191108140541466" /></p>
+<p>路径会显示为本地路径，像这样</p>
 
-<p>如上图我们的插图是放在images\posts 文件夹里
-必须在路径前加上 \   ，变成\images\posts\image-20191108134341430.png</p>
+<p><code class="highlighter-rouge">
+![issue2-2020-12-29-130803](/Users/*******/images/2019/12/issue2-2020-12-29-130803.jpg
+</code></p>
+
+<p>这时候图片能正常显示，因为路径是本地的</p>
+
+<p>但传到服务器会显示错误，像这样</p>
+
+<p><img src="\images\2019\12\issue2-2020-12-29-130803.jpg" alt="issue2-2020-12-29-130803" /></p>
+
+<p>因此必须在上传服务器前将路径里的 / 修改为 \ <br />
+变成\images\2019\12\issue2-2020-12-29-130803.jpg</p>
 
 <p>这样才能正确显示</p>
 
-<p>要注意修改后图片在本地编辑器就没办法显示正确了</p>
+<p>不过要注意修改后图片在本地编辑器就没办法显示正确了</p>
 
 <p>只能二选一咯</p>
 
@@ -287,7 +296,7 @@
 
 <ul class="share-list">
   <li>
-    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=插图显示问题 问题集2&url=https://motioneri.github.io//2019/11/08/03/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=Jekyll 问题集2 插图显示问题&url=https://motioneri.github.io//2019/11/08/03/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
       <div data-icon="ei-sc-twitter" data-size="s" class="share-list__icon share-list__icon--twitter"></div>
     </a>
   </li>

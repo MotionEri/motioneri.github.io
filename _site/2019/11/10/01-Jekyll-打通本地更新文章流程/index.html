@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jekyll 问题集3 导航报错</title>
-  <meta name="description" content="but you haven't included the `jekyll-paginate` gem">
-  <link rel="canonical" href="https://motioneri.github.io//2019/11/08/04/">
+  <title>Jekyll 打通本地更新文章流程</title>
+  <meta name="description" content="更新文章">
+  <link rel="canonical" href="https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/">
   <link rel="alternate" type="application/rss+xml" title="MTC+" href="https://motioneri.github.io//feed.xml">
 
   <style type="text/css">
@@ -209,39 +209,144 @@
   <div class="row row--full">
 
     <div class="column column--center medium-12 large-12">
-      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/20191229-132340.jpg)"></div>
+      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/20191230-092019.jpg)"></div>
     </div>
 
     <div class="column column--center medium-12 large-10">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
         
-          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/20191229-132340.jpg">
+          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/20191230-092019.jpg">
         
 
         <header class="post__header">
-          <h2 class="post__title" itemprop="name headline">Jekyll 问题集3 导航报错</h2>
-          <time class="post__date" datetime="2019-11-08T00:00:00+08:00" itemprop="datePublished">Nov 8, 2019</time>
+          <h2 class="post__title" itemprop="name headline">Jekyll 打通本地更新文章流程</h2>
+          <time class="post__date" datetime="2019-11-10T00:00:00+08:00" itemprop="datePublished">Nov 10, 2019</time>
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <p><code class="highlighter-rouge">
-but you haven't included the `jekyll-paginate` gem
+          <h2 id="section">更新文章</h2>
+
+<p>我希望在PC 和 MAC端都可以随时写文章，更新博客<br />而且在推送内容至正式服务器前，我可以预览效果<br />翻查一下原来Jekyll 系统非常友好，它是基于一个叫Ruby 开发的项目<br />
+我们只需要在系统安装好有关的程序包<br />就能启动一个服务器<br />通过服务器的编译，我们就可以预览文章效果啦<br /></p>
+
+<p><br /></p>
+
+<h2 id="section-1">部署服务器</h2>
+
+<p>下面记录一下PC和MAC端的设置方法</p>
+
+<h3 id="pc">PC端</h3>
+
+<p>打开Start Command Prompt with Rugy<br />利用cd 指令跳转到网站在本地的文件夹<br />现在网站的文件夹在C:\Users\motio\Documents\GitHub\motioneri.github.io<br />输入一下cd 指令<br /></p>
+
+<p><code class="highlighter-rouge">
+cd Documents\GitHub\motioneri.github.io
 </code></p>
 
-<p>这个问题没能解决，但是神奇的是上传到Github 后，问题被解决了</p>
+<p>这时候指令会变成<br /></p>
 
-<p>后来有搜到可能是一个bug，发生在windows环境里</p>
+<p><code class="highlighter-rouge">
+C:\Users\aaaaaa\Documents\GitHub\motioneri.github.io&gt;
+</code></p>
+
+<p>我们已经跳转到网站所在的文件夹了<br />接下来我们需要安装一些套件<br />输入<br /></p>
+
+<p><code class="highlighter-rouge">
+bundle install
+</code></p>
+
+<p>这句命令是安装一些套件的<br />过程需要蛮久的，先放着不管去忙别的<br />我每次都需要等个20分钟左右<br />完成后会提示安装了一堆套件<br />然后我们需要激活服务器服务，输入下面的指令<br /></p>
+
+<p><code class="highlighter-rouge">
+bundle exec jekyll serve
+</code></p>
+
+<p>一旦成功，会看到以下提示</p>
+
+<p>```
+Server address: http://127.0.0.1:4000/</p>
+
+<p>Server running… press ctrl-c to stop.
+```</p>
+
+<p>我们可以点击服务器连接进入网站 <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a></p>
+
+<p>正常情况下应该能看到网站了</p>
+
+<p><br /></p>
+
+<h3 id="mac">MAC端</h3>
+
+<p>MAC 端也是一样的操作<br />
+打开Terminal，输入bundle install<br />
+之后Terminal 会开始安装一大堆东西，过程需时，耐心等待完成<br />
+之后输入下面指令开始服务器</p>
+
+<p><code class="highlighter-rouge">
+bundle exec jekyll serve
+</code></p>
+
+<p>成功后会显示 服务器地址  <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a></p>
+
+<p><code class="highlighter-rouge">
+Server address: http://127.0.0.1:4000/
+Server running... press ctrl-c to stop.
+</code></p>
+
+<p><br /></p>
+
+<h2 id="section-2">文章存放位置</h2>
+
+<p><code class="highlighter-rouge">
+_posts
+</code></p>
+
+<p>我所使用的Jekyll 模板文章所存放的位置在_posts文件夹</p>
+
+<p>只要在里面储存好markdown格式的文档</p>
+
+<p>服务器会自动将里面的文档编译为静态网页</p>
+
+<p>如果有十个文档，那网站里就有十篇文章</p>
+
+<p><br /></p>
+
+<h2 id="section-3">文章格式和命名规范</h2>
+
+<p>文档需要为Markdown格式</p>
+
+<p>后缀名为.md</p>
+
+<p>档案命名规范为：YEAR-MONTH-DAY-title.MARKUP</p>
+
+<p>之前没有意识到这个问题，随意命名文档，结果网站怎么都不显示内容</p>
+
+<p>后来花了一整天排查错误，最后发现原来是命名出问题导致系统无法识别已存在文件夹里的文章</p>
+
+<p>教学出处在这里：</p>
+
+<p><a href="https://jekyllrb.com/docs/posts/">https://jekyllrb.com/docs/posts/</a></p>
+
+<p><br /></p>
+
+<h2 id="section-4">可以开始写文章了</h2>
+
+<p>文章的排版按照markdown的规范书写即可</p>
+
+<p>最后网站会根据markdown渲染效果</p>
+
+<p>完成了～</p>
 
           <div class="post__tags">
             
-              <a href="/tag/前端">前端</a>
-            
               <a href="/tag/jekyll">jekyll</a>
+            
+              <a href="/tag/前端">前端</a>
             
               <a href="/tag/blog">blog</a>
             
-              <a href="/tag/issue">issue</a>
+              <a href="/tag/tagging">tagging</a>
             
           </div>
         </div>
@@ -280,17 +385,17 @@ but you haven't included the `jekyll-paginate` gem
 
 <ul class="share-list">
   <li>
-    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=Jekyll 问题集3 导航报错&url=https://motioneri.github.io//2019/11/08/04/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=Jekyll 打通本地更新文章流程&url=https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
       <div data-icon="ei-sc-twitter" data-size="s" class="share-list__icon share-list__icon--twitter"></div>
     </a>
   </li>
   <li>
-    <a class="share-list__link" href="https://facebook.com/sharer.php?u=https://motioneri.github.io//2019/11/08/04/" rel="nofollow" target="_blank" title="Share on Facebook">
+    <a class="share-list__link" href="https://facebook.com/sharer.php?u=https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/" rel="nofollow" target="_blank" title="Share on Facebook">
     <div data-icon="ei-sc-facebook" data-size="s" class="share-list__icon share-list__icon--facebook"></div>
     </a>
   </li>
   <li>
-    <a class="share-list__link" href="https://plus.google.com/share?url=https://motioneri.github.io//2019/11/08/04/" rel="nofollow" target="_blank" title="Share on Google+">
+    <a class="share-list__link" href="https://plus.google.com/share?url=https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/" rel="nofollow" target="_blank" title="Share on Google+">
     <div data-icon="ei-sc-google-plus" data-size="s" class="share-list__icon share-list__icon--google"></div>
     </a>
   </li>
@@ -321,7 +426,7 @@ but you haven't included the `jekyll-paginate` gem
 
 <script>
   var disqus_config = function () {
-    this.page.url = "https://motioneri.github.io//2019/11/08/04/";
+    this.page.url = "https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/";
   };
 
   (function() {

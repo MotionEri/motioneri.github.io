@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>安装jekyll 模板 问题集3 Tagging</title>
-  <meta name="description" content="第一阶段：开通Blog">
+  <title>Jekyll 打通本地更新文章流程</title>
+  <meta name="description" content="更新文章">
   <link rel="canonical" href="https://motioneri.github.io//2019/11/10/01/">
   <link rel="alternate" type="application/rss+xml" title="MTC+" href="https://motioneri.github.io//feed.xml">
 
@@ -220,156 +220,119 @@
         
 
         <header class="post__header">
-          <h2 class="post__title" itemprop="name headline">安装jekyll 模板 问题集3 Tagging</h2>
+          <h2 class="post__title" itemprop="name headline">Jekyll 打通本地更新文章流程</h2>
           <time class="post__date" datetime="2019-11-10T00:00:00+08:00" itemprop="datePublished">Nov 10, 2019</time>
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <p>第一阶段：开通Blog</p>
+          <h2 id="section">更新文章</h2>
 
-<p>第二阶段：打通文章系统 需要安装Ruby 需要通过Ruby 安装Jekyll 检查是否安装成功：jekyll -v， jekyll 4.0.0</p>
+<p>我希望在PC 和 MAC端都可以随时写文章，更新博客<br />而且在推送内容至正式服务器前，我可以预览效果<br />翻查一下原来Jekyll 系统非常友好，它是基于一个叫Ruby 开发的项目<br />
+我们只需要在系统安装好有关的程序包<br />就能启动一个服务器<br />通过服务器的编译，我们就可以预览文章效果啦<br /></p>
 
-<p>第三阶段：美化Blog</p>
+<p><br /></p>
 
-<p>第四阶段：发布文章</p>
+<h2 id="section-1">部署服务器</h2>
 
-<p>是不是很想要一个博客</p>
+<p>下面记录一下PC和MAC端的设置方法</p>
 
-<p>但是独立建站又麻烦，又费钱</p>
+<h3 id="pc">PC端</h3>
 
-<p>那些免费的广告又多，又不美观</p>
+<p>打开Start Command Prompt with Rugy<br />利用cd 指令跳转到网站在本地的文件夹<br />现在网站的文件夹在C:\Users\motio\Documents\GitHub\motioneri.github.io<br />输入一下cd 指令<br /></p>
 
-<p>想轻度折腾，不想太浪费时间</p>
+<p><code class="highlighter-rouge">
+cd Documents\GitHub\motioneri.github.io
+</code></p>
 
-<p>那就跟我一起尝试一下jekyll 吧</p>
+<p>这时候指令会变成<br /></p>
 
-<p>### 建立Repository</p>
+<p><code class="highlighter-rouge">
+C:\Users\aaaaaa\Documents\GitHub\motioneri.github.io&gt;
+</code></p>
 
-<p>我们的目的是利用Github 的免费空间把blog 部署上去</p>
+<p>我们已经跳转到网站所在的文件夹了<br />接下来我们需要安装一些套件<br />输入<br /></p>
 
-<p>首先在Github 新增一个Repository 用作Blog</p>
+<p><code class="highlighter-rouge">
+bundle install
+</code></p>
 
-<p>然后安装Github Desktop</p>
+<p>这句命令是安装一些套件的<br />过程需要蛮久的，先放着不管去忙别的<br />我每次都需要等个20分钟左右<br />完成后会提示安装了一堆套件<br />然后我们需要激活服务器服务，输入下面的指令<br /></p>
 
-<p>我们通过Github Desktop 把网站Clone 到本地</p>
-
-<p>同步到Github</p>
-
-<p>连接域名到Github Pages：https://motioneri.github.io/</p>
-
-<p>### 部署网站</p>
-
-<p>我们打开Start Command Prompt with Rugy</p>
-
-<p>利用cd 指令跳转到网站在本地的文件夹</p>
-
-<p>现在网站的文件夹在C:\Users\motio\Documents\GitHub\motioneri.github.io</p>
-
-<p>我们输入一下cd 指令</p>
-
-<p>```</p>
-
-<p>cd Documents\GitHub\motioneri.github.io</p>
-
-<p>```</p>
-
-<p>这时候</p>
-
-<p>指令会变成</p>
-
-<p>C:\Users\motio\Documents\GitHub\motioneri.github.io&gt;</p>
-
-<p>我们已经跳转到网站所在的文件夹了</p>
-
-<p>接下来我们需要安装一些套件</p>
-
-<p>输入</p>
-
-<p>```</p>
-
-<p>bundle install</p>
-
-<p>```</p>
-
-<p>这句命令是安装一些套件的</p>
-
-<p>过程需要蛮久的，先放着不管去忙别的</p>
-
-<p>我每次都需要等个20分钟左右</p>
-
-<p>完成后会提示安装了一堆套件</p>
-
-<p><img src="evernotecid://FE901839-E487-4D3D-89F9-2C82D66112F0/appyinxiangcom/17534957/ENResource/p15219" alt="79be857d9a0ca87b56f4d822b31569d7.png" /></p>
-
-<p>```</p>
-
-<p>bundle exec jekyll serve</p>
-
-<p>```</p>
-
-<p>这句命令是用来启动服务器</p>
+<p><code class="highlighter-rouge">
+bundle exec jekyll serve
+</code></p>
 
 <p>一旦成功，会看到以下提示</p>
 
-<p>```</p>
+<p>```
+Server address: http://127.0.0.1:4000/</p>
 
-<p>Configuration file: C:/Users/motio/Documents/GitHub/motioneri.github.io/_config.yml</p>
+<p>Server running… press ctrl-c to stop.
+```</p>
 
-<p>Source: C:/Users/motio/Documents/GitHub/motioneri.github.io</p>
-
-<p>Destination: C:/Users/motio/Documents/GitHub/motioneri.github.io/_site</p>
-
-<p>Incremental build: disabled. Enable with –incremental</p>
-
-<p>Generating…</p>
-
-<p>done in 1.893 seconds.</p>
-
-<p>Please add the following to your Gemfile to avoid polling for changes:</p>
-
-<p>gem ‘wdm’, ‘&gt;= 0.1.0’ if Gem.win_platform?</p>
-
-<p>Auto-regeneration: enabled for ‘C:/Users/motio/Documents/GitHub/motioneri.github.io’</p>
-
-<p>Configuration file: C:/Users/motio/Documents/GitHub/motioneri.github.io/_config.yml</p>
-
-<p>Server address: http://127.0.0.1:4000/</p>
-
-<p>Server running… press ctrl-c to stop.</p>
-
-<p>```</p>
-
-<p>我们可以点击服务器连接进入网站<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a></p>
+<p>我们可以点击服务器连接进入网站 <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a></p>
 
 <p>正常情况下应该能看到网站了</p>
 
-<p>### Post</p>
+<p><br /></p>
 
-<p><strong>存放位置</strong></p>
+<h3 id="mac">MAC端</h3>
 
-<p>```</p>
+<p>MAC 端也是一样的操作<br />
+打开Terminal，输入bundle install<br />
+之后Terminal 会开始安装一大堆东西，过程需时，耐心等待完成<br />
+之后输入下面指令开始服务器</p>
 
-<p>_posts 文件夹</p>
+<p><code class="highlighter-rouge">
+bundle exec jekyll serve
+</code></p>
 
-<p>```</p>
+<p>成功后会显示 服务器地址  <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a></p>
 
-<p><strong>文章命名和格式</strong></p>
+<p><code class="highlighter-rouge">
+Server address: http://127.0.0.1:4000/
+Server running... press ctrl-c to stop.
+</code></p>
 
-<p>文章可以识别Markdown格式</p>
+<p><br /></p>
+
+<h2 id="section-2">文章存放位置</h2>
+
+<p><code class="highlighter-rouge">
+_posts
+</code></p>
+
+<p>我所使用的Jekyll 模板文章所存放的位置在_posts文件夹</p>
+
+<p>只要在里面储存好markdown格式的文档</p>
+
+<p>服务器会自动将里面的文档编译为静态网页</p>
+
+<p>如果有十个文档，那网站里就有十篇文章</p>
+
+<p><br /></p>
+
+<h2 id="section-3">文章格式和命名规范</h2>
+
+<p>文档需要为Markdown格式</p>
 
 <p>后缀名为.md</p>
 
-<p>档案命名必须为：YEAR-MONTH-DAY-title.MARKUP</p>
+<p>档案命名规范为：YEAR-MONTH-DAY-title.MARKUP</p>
 
-<p>我花了一整天排查错误，最后发现原来是命名出问题导致系统无法识别已存在文件夹里的文章</p>
+<p>之前没有意识到这个问题，随意命名文档，结果网站怎么都不显示内容</p>
+
+<p>后来花了一整天排查错误，最后发现原来是命名出问题导致系统无法识别已存在文件夹里的文章</p>
 
 <p>教学出处在这里：</p>
 
 <p><a href="https://jekyllrb.com/docs/posts/">https://jekyllrb.com/docs/posts/</a></p>
 
-<p>模板</p>
+<h2 id="section-4">可以开始写文章了</h2>
 
-<p>jekyll 模板 EAST</p>
+<p>文章的排版按照markdown的规范书写即可</p>
+
+<p>最后网站会根据markdown渲染效果</p>
 
           <div class="post__tags">
             
@@ -380,8 +343,6 @@
               <a href="/tag/blog">blog</a>
             
               <a href="/tag/tagging">tagging</a>
-            
-              <a href="/tag/issue">issue</a>
             
           </div>
         </div>
@@ -420,7 +381,7 @@
 
 <ul class="share-list">
   <li>
-    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=安装jekyll 模板 问题集3 Tagging&url=https://motioneri.github.io//2019/11/10/01/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=Jekyll 打通本地更新文章流程&url=https://motioneri.github.io//2019/11/10/01/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
       <div data-icon="ei-sc-twitter" data-size="s" class="share-list__icon share-list__icon--twitter"></div>
     </a>
   </li>

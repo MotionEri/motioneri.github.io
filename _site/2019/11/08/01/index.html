@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="欢迎来到Jekyll">
+  <title>安装jekyll 模板 问题集1</title>
+  <meta name="description" content="安装模板">
   <link rel="canonical" href="https://motioneri.github.io//2019/11/08/01/">
   <link rel="alternate" type="application/rss+xml" title="MTC+" href="https://motioneri.github.io//feed.xml">
 
@@ -209,72 +209,87 @@
   <div class="row row--full">
 
     <div class="column column--center medium-12 large-12">
-      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/image.jpeg)"></div>
+      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/8.jpg)"></div>
     </div>
 
     <div class="column column--center medium-12 large-10">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
         
-          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/image.jpeg">
+          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/8.jpg">
         
 
         <header class="post__header">
-          <h2 class="post__title" itemprop="name headline">Welcome to Jekyll!</h2>
+          <h2 class="post__title" itemprop="name headline">安装jekyll 模板 问题集1</h2>
           <time class="post__date" datetime="2019-11-08T00:00:00+08:00" itemprop="datePublished">Nov 8, 2019</time>
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <h2 id="jekyll">欢迎来到Jekyll</h2>
+          <h2 id="section">安装模板</h2>
 
-<p>一直很想要一个窗口，书写自己的东西，别人偶尔也能访问一下</p>
+<p>下载了一个jekyll 模板，以为直接覆盖原有文件夹后重新发布就可以上线了<br />
+结果发现发布的时候出现这个错误</p>
 
-<p>用过公共博客，建过Wordpress，后来一直开通那些书写的服务，一直在不同地方写东西</p>
+<p><code class="highlighter-rouge">
+  Liquid Exception: Liquid error (line 16): Invalid GBK character "\xE2" on line 5 in /Users/motio/Documents/GitHub/motioneri.github.io/_layouts/default.html
+</code></p>
 
-<p>上个月发现原来现在的blog 开通已经变得非常简单</p>
+<p>打开Default.html，逐一排查后并没有发现任何错误<br />
+逐检查head.html，这是个头部文件，果然排查后发现这一段代码有问题</p>
 
-<p>注册一个Github Pages</p>
+<p><img src="\images\posts\image-20191108140541466.png" alt="image-20191108140541466" /></p>
 
-<p>安装一个Jekyll，直接通过Github 推送，连服务器都省了</p>
+<p>这是一段利用Liquid 的技术写的代码，{/{ inlineCSS   scssify /}/} <br />
+只有这一句删掉后，网站才可以重新发布
+<br />
+<br /></p>
 
-<p>所以趁着空余时间，建了一个玩玩看</p>
+<h2 id="section-1">编码问题</h2>
+<p>经过搜索后发现应该是编码问题，不知如何误以为文件是GBK编码<br />
+后来发现这个Blog有提到 <em>改不了內建的 File.read ，就只能改 Sass 了</em>
+https://www.twblogs.net/a/5b8dfe2d2b71771883421b53</p>
 
-<p><br /></p>
+<p>按照他的方法，在C:\Ruby26-x64\lib\ruby\gems\2.6.0\gems\sass-3.4.20\lib\sass\importers找到filesystem.rb，并添加了SASS 的ENGINE READ Encoding to UTF-8<br /></p>
 
-<h3 id="jekyll-">开通Jekyll 过程</h3>
+<p>重新尝试发布网站，还是失败出现同样错误<br /></p>
 
-<p>第一阶段：开通Blog</p>
+<p>再度搜索发现有另外的人在其他问题里出现类似的问题<br /></p>
 
-<ul>
-  <li>在Github新增一个Repository 用作Blog</li>
-  <li>安装Github Desktop</li>
-  <li>安装一个Jekyll Theme for Github Pages</li>
-  <li>同步到Github</li>
-  <li>连接域名到Github Pages：https://motioneri.github.io/</li>
-</ul>
+<p>https://talk.jekyllrb.com/t/how-to-deal-with–sass-converting-errors/911</p>
 
-<p>第二阶段：打通文章系统</p>
+<p>解决方法是在yaml文件添加编码指向<br />
+于是我在_config.yml 文件 添加了这句<br /></p>
 
-<ul>
-  <li>需要安装Ruby</li>
-  <li>需要通过Ruby 安装Jekyll</li>
-  <li>检查是否安装成功：jekyll -v， jekyll 4.0.0</li>
-</ul>
+<p><code class="highlighter-rouge">
+encoding: utf-8
+</code></p>
 
-<p>第三阶段：发布文章</p>
+<p>一不做二不休，连css的文件我也加了编码<br />
+找到generic和elements的文件夹，两个_all.scss都加上这句<br /></p>
 
-<p>完成～</p>
+<p><code class="highlighter-rouge">
+@charset "utf-8";
+</code></p>
+
+<p>重新刷新一下发布，好了<br />
+没有错误了，服务器网址出来了<br /></p>
+
+<p><img src="\images\posts\image-20191108134341430.png" alt="image-20191108134341430" /></p>
+
+<p>不过这下又有新的问题，哈哈哈</p>
+
+<p>后面再解决</p>
 
 
           <div class="post__tags">
             
-              <a href="/tag/github">github</a>
+              <a href="/tag/前端">前端</a>
             
               <a href="/tag/jekyll">jekyll</a>
             
               <a href="/tag/blog">blog</a>
             
-              <a href="/tag/ruby">ruby</a>
+              <a href="/tag/issue">issue</a>
             
           </div>
         </div>
@@ -313,7 +328,7 @@
 
 <ul class="share-list">
   <li>
-    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=Welcome to Jekyll!&url=https://motioneri.github.io//2019/11/08/01/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=安装jekyll 模板 问题集1&url=https://motioneri.github.io//2019/11/08/01/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
       <div data-icon="ei-sc-twitter" data-size="s" class="share-list__icon share-list__icon--twitter"></div>
     </a>
   </li>
