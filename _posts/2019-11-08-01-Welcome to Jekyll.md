@@ -2,10 +2,10 @@
 layout: post
 title: Welcome to Jekyll!
 featured: true
-author: john
+author: ERI
 tags: [github, jekyll, blog, ruby]
 
-image: '/images/posts/image.jpeg'
+image: '/images/posts/20191229-125643.jpg'
 ---
 
 
@@ -28,11 +28,11 @@ image: '/images/posts/image.jpeg'
 
 ### 开通Jekyll 过程
 
-第一阶段：开通Blog
+第一阶段：开通Blog<br>我们的目的是利用Github 的免费空间把blog 部署上去
 
 - 在Github新增一个Repository 用作Blog
 - 安装Github Desktop
-- 安装一个Jekyll Theme for Github Pages
+- 通过Github Desktop 把网站Clone 到本地
 - 同步到Github
 - 连接域名到Github Pages：https://motioneri.github.io/
 

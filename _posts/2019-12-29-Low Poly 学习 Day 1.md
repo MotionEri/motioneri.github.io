@@ -12,7 +12,7 @@ image: '/images/posts/20191229-005143.jpg'
 
 这是最终效果图
 
-![lowpoly-2019-12-28-224026](/Users/eri/Documents/GitHub/motioneri.github.io/images/2019/12/lowpoly-2019-12-28-224026.jpg)
+![lowpoly-2019-12-28-224026](\images\2019\12\lowpoly-2019-12-28-224026.jpg)
 
 Renderer: Built in<br>Software: C4D r21<br>学习教程: https://www.youtube.com/watch?v=OZ4wos3VYTo&t=682s<br>
 

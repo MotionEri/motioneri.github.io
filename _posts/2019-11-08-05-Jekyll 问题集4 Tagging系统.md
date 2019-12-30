@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 安装jekyll 模板 问题集3 Tagging
+title: Jekyll 问题集4 Tagging系统
 author: ERI
 tags: [jekyll, 前端, blog, tagging, issue]
-image: '/images/posts/8.jpg'
+image: '/images/posts/20191229-132706.jpg'
 ---
 
 目前这个主题 Tagging部分是没法使用的
