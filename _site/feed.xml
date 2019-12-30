@@ -5,10 +5,19 @@
     <description>Mind The Creative, Commerce, Charity, China</description>
     <link>https://motioneri.github.io//</link>
     <atom:link href="https://motioneri.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Dec 2019 18:37:47 +0800</pubDate>
-    <lastBuildDate>Mon, 30 Dec 2019 18:37:47 +0800</lastBuildDate>
+    <pubDate>Mon, 30 Dec 2019 19:00:03 +0800</pubDate>
+    <lastBuildDate>Mon, 30 Dec 2019 19:00:03 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
 
+    
+      <item>
+        <title>test</title>
+        <description>&lt;p&gt;Test&lt;/p&gt;
+</description>
+        <pubDate>Mon, 30 Dec 2019 00:00:00 +0800</pubDate>
+        <link>https://motioneri.github.io//2019/12/30/test/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/30/test/</guid>
+      </item>
     
       <item>
         <title>Low Poly 学习 Day 1</title>
@@ -409,6 +418,14 @@ encoding: utf-8
             <link>https://motioneri.github.io//test.html</link>
           </item>
         
+      
+    
+      
+    
+      
+    
+      
+    
       
     
       

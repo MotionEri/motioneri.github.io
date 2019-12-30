@@ -29,19 +29,14 @@ layout: default
           {{ content }}
           <div class="post__tags">
             {% for tag in page.tags %}
-              <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
+            {% capture tag_name %}{{ tag }}{% endcapture %}
+            <a href="/tag/{{ tag_name | replace: ' ', '_' }}">{{ tag_name }}</a>
             {% endfor %}
           </div>
         </div>
 
         <hr>
 
-        <span>[
-          {% for tag in page.tags %}
-            {% capture tag_name %}{{ tag }}{% endcapture %}
-            <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
-          {% endfor %}
-        ]</span>
 
         {% if page.author %}
           {% include author.html %}

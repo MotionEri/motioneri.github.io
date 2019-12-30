@@ -19,7 +19,7 @@ layout: default
 
   <div class="row">
     <div class="post-list">
-      {% for post in page.posts %}
+      {% for post in site.tags[page.tag] %}
         {% include post-card.html %}
       {% endfor %}
     </div>
@@ -30,15 +30,3 @@ layout: default
   </div>
 
 </div>
-
-<div class="post">
-<h1>Tag: {{ page.tag }}</h1>
-<ul>
-{% for post in site.tags[page.tag] %}
-  <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
-    {{ post.description }}
-  </li>
-{% endfor %}
-</ul>
-</div>
-<hr>
