@@ -3,7 +3,7 @@ layout: post
 title: Welcome to Jekyll!
 featured: true
 author: ERI
-tags: [github, jekyll, blog, ruby]
+tags: [github, jekyll, blog, 过程]
 
 image: '/images/posts/20191229-125643.jpg'
 ---

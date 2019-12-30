@@ -2,7 +2,7 @@
 layout: post
 title: Low Poly 学习 Day 1
 author: ERI
-tags: [low poly, c4d, modelling, 建模]
+tags: [low-poly, c4d, 建模, 练习]
 image: '/images/posts/20191229-005143.jpg'
 ---
 

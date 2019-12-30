@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll 问题集4 Tagging系统
 author: ERI
-tags: [jekyll, 前端, blog, tagging, issue]
+tags: [jekyll, issue]
 image: '/images/posts/20191229-132706.jpg'
 ---
 
