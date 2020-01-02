@@ -15,7 +15,7 @@
           <ul class="list-bare text-center">
             {% for page in site.pages %}
               {% unless page.name == '404.md' %}
-              {% unless page.layout == 'tagpage' %}
+              {% unless page.layout == 'tag_page' %}
                 {% if page.title %}
                   <li>
                     <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>

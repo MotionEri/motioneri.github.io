@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>test</title>
-  <meta name="description" content="Test">
+  <title>测试tagging feature fixed</title>
+  <meta name="description" content="2020-01-02 修复bug成功">
   <link rel="canonical" href="https://motioneri.github.io//2019/12/30/test/">
   <link rel="alternate" type="application/rss+xml" title="MTC+" href="https://motioneri.github.io//feed.xml">
 
@@ -54,29 +54,64 @@
               
             
               
+              
                 
                   <li>
                     <a class="page-link" href="/about.html">About</a>
                   </li>
                 
               
-            
-              
-                
               
             
               
-                
-                  <li>
-                    <a class="page-link" href="/tag/hololens/">Tag: hololens</a>
-                  </li>
-                
+              
               
             
               
-                
+              
               
             
+              
+              
+                
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
+              
+                
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
+              
+              
+            
+              
               
                 
                   <li>
@@ -84,85 +119,58 @@
                   </li>
                 
               
-            
-              
-                
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
+              
               
             
               
-                
               
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
-              
-            
-              
-                
               
             
             <li><a class="subscribe-button icon-feed" href="/feed.xml">RSS</a></li>
@@ -207,7 +215,7 @@
       <div class="sidebar__bottom">
         <div class="column small-12 large-12">
           <div class="font-tiny">
-            &copy; 2019 MTC+
+            &copy; 2020 MTC+
           </div>
         </div>
       </div>
@@ -250,43 +258,71 @@
   <div class="row row--full">
 
     <div class="column column--center medium-12 large-12">
-      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/20191229-005143.jpg)"></div>
+      <div class="grey-bg CoverImage FlexEmbed FlexEmbed--16by9" style="background-image: url(/images/posts/-005143.jpg)"></div>
     </div>
 
     <div class="column column--center medium-12 large-10">
       <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
         
-          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/20191229-005143.jpg">
+          <meta itemprop="og:image" content="https://motioneri.github.io//images/posts/-005143.jpg">
         
 
         <header class="post__header">
-          <h2 class="post__title" itemprop="name headline">test</h2>
+          <h2 class="post__title" itemprop="name headline">测试tagging feature fixed</h2>
           <time class="post__date" datetime="2019-12-30T00:00:00+08:00" itemprop="datePublished">Dec 30, 2019</time>
         </header>
 
         <div class="post-content" itemprop="articleBody">
-          <p>Test</p>
+          <h2 id="bug">2020-01-02 修复bug成功</h2>
+
+<p>刚才再搜了一下错误关键词，然后发现这段留言</p>
+
+<blockquote>
+  <p>for nil—&gt; 你对某个值为nil的东西使用了”&gt;”方法
+可能原来这个值是一个数字 但是你不小心去掉了某个地方给他的赋值 使得机器认为这个变量值的nil 对nil使用数字的方法就会出错</p>
+</blockquote>
+
+<p>https://tieba.baidu.com/p/1186376046?red_tag=2385973490&amp;traceid=</p>
+
+<p>稍微启发了一下，说不定就是我的tagpage没改好名字<br />果不其然原来是跟_config.yml 有关系的</p>
+
+<blockquote>
+  <p>tag_page_layout:      tag_page</p>
+</blockquote>
+
+<p>把文件全改成 tag_page，服务器又回复正常了</p>
+
+<p><br /></p>
+
+<p>另外在sidebar.html 再加一个unless</p>
+
+<p><code class="highlighter-rouge">
+unless page.layout == 'tag_page'
+</code></p>
+
+<p>导航就不会出现tag page的链接了</p>
+
+<h2 id="section">2019-12-30 标签功能修复</h2>
+
+<p>目前正在测试标签的功能修复</p>
+
+<p>修复按照网上一篇教程来的</p>
+
+<p>https://longqian.me/2017/02/09/github-jekyll-tag/</p>
+
+<p>目前还差里面提到的
+Automatic tag page creation</p>
+
+<p>不知道如何跑一个python 程序，然后自动生成md文档</p>
+
+<p>还有需要把tag page 排除在菜单显示</p>
+
 
           <div class="post__tags">
             
             
-            <a href="/tag/测试">测试</a>
-            
-            
-            <a href="/tag/完全没有">完全没有</a>
-            
-            
-            <a href="/tag/中英mix">中英mix</a>
-            
-            
-            <a href="/tag/ok">ok</a>
-            
-            
             <a href="/tag/test">test</a>
-            
-            
-            <a href="/tag/hololens">hololens</a>
             
           </div>
         </div>
@@ -326,7 +362,7 @@
 
 <ul class="share-list">
   <li>
-    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=test&url=https://motioneri.github.io//2019/12/30/test/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
+    <a class="share-list__link" href="https://twitter.com/intent/tweet?text=测试tagging feature fixed&url=https://motioneri.github.io//2019/12/30/test/&via=aspirethemes&related=aspirethemes" rel="nofollow" target="_blank" title="Share on Twitter">
       <div data-icon="ei-sc-twitter" data-size="s" class="share-list__icon share-list__icon--twitter"></div>
     </a>
   </li>

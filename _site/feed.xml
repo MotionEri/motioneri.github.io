@@ -5,18 +5,61 @@
     <description>Mind The Creative, Commerce, Charity, China</description>
     <link>https://motioneri.github.io//</link>
     <atom:link href="https://motioneri.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Dec 2019 19:14:35 +0800</pubDate>
-    <lastBuildDate>Mon, 30 Dec 2019 19:14:35 +0800</lastBuildDate>
+    <pubDate>Thu, 02 Jan 2020 16:08:24 +0800</pubDate>
+    <lastBuildDate>Thu, 02 Jan 2020 16:08:24 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
 
     
       <item>
-        <title>test</title>
-        <description>&lt;p&gt;Test&lt;/p&gt;
+        <title>测试tagging feature fixed</title>
+        <description>&lt;h2 id=&quot;bug&quot;&gt;2020-01-02 修复bug成功&lt;/h2&gt;
+
+&lt;p&gt;刚才再搜了一下错误关键词，然后发现这段留言&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;for nil—&amp;gt; 你对某个值为nil的东西使用了”&amp;gt;”方法
+可能原来这个值是一个数字 但是你不小心去掉了某个地方给他的赋值 使得机器认为这个变量值的nil 对nil使用数字的方法就会出错&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;https://tieba.baidu.com/p/1186376046?red_tag=2385973490&amp;amp;traceid=&lt;/p&gt;
+
+&lt;p&gt;稍微启发了一下，说不定就是我的tagpage没改好名字&lt;br /&gt;果不其然原来是跟_config.yml 有关系的&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;tag_page_layout:      tag_page&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;把文件全改成 tag_page，服务器又回复正常了&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外在sidebar.html 再加一个unless&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;```&lt;/p&gt;
+
+&lt;p&gt;导航就不会出现tag page的链接了&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;2019-12-30 标签功能修复&lt;/h2&gt;
+
+&lt;p&gt;目前正在测试标签的功能修复&lt;/p&gt;
+
+&lt;p&gt;修复按照网上一篇教程来的&lt;/p&gt;
+
+&lt;p&gt;https://longqian.me/2017/02/09/github-jekyll-tag/&lt;/p&gt;
+
+&lt;p&gt;目前还差里面提到的
+Automatic tag page creation&lt;/p&gt;
+
+&lt;p&gt;不知道如何跑一个python 程序，然后自动生成md文档&lt;/p&gt;
+
+&lt;p&gt;还有需要把tag page 排除在菜单显示&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 30 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/30/test/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/30/test/</guid>
+        <link>https://motioneri.github.io//2019/12/30/01-test/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/30/01-test/</guid>
       </item>
     
       <item>
@@ -63,8 +106,8 @@
 
 </description>
         <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/29/Low-Poly-%E5%AD%A6%E4%B9%A0-Day-1/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/Low-Poly-%E5%AD%A6%E4%B9%A0-Day-1/</guid>
+        <link>https://motioneri.github.io//2019/12/29/02/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/02/</guid>
       </item>
     
       <item>
@@ -80,8 +123,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/29/Jekyll-%E7%9B%AE%E5%89%8D%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/Jekyll-%E7%9B%AE%E5%89%8D%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/</guid>
+        <link>https://motioneri.github.io//2019/12/29/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/01/</guid>
       </item>
     
       <item>
@@ -200,8 +243,8 @@ _posts
 &lt;p&gt;完成了～&lt;/p&gt;
 </description>
         <pubDate>Sun, 10 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/10/01-Jekyll-%E6%89%93%E9%80%9A%E6%9C%AC%E5%9C%B0%E6%9B%B4%E6%96%B0%E6%96%87%E7%AB%A0%E6%B5%81%E7%A8%8B/</guid>
+        <link>https://motioneri.github.io//2019/11/10/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/10/01/</guid>
       </item>
     
       <item>
@@ -213,8 +256,8 @@ _posts
 &lt;p&gt;在本地可以生效，但是上传到Github 后缺不能跳转&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/05-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging%E7%B3%BB%E7%BB%9F/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/05-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%864-Tagging%E7%B3%BB%E7%BB%9F/</guid>
+        <link>https://motioneri.github.io//2019/11/08/05/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/05/</guid>
       </item>
     
       <item>
@@ -228,8 +271,8 @@ but you haven&#39;t included the `jekyll-paginate` gem
 &lt;p&gt;后来有搜到可能是一个bug，发生在windows环境里&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/04-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%863-%E5%AF%BC%E8%88%AA%E6%8A%A5%E9%94%99/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/04-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%863-%E5%AF%BC%E8%88%AA%E6%8A%A5%E9%94%99/</guid>
+        <link>https://motioneri.github.io//2019/11/08/04/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/04/</guid>
       </item>
     
       <item>
@@ -259,8 +302,8 @@ but you haven&#39;t included the `jekyll-paginate` gem
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/03-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%862-%E6%8F%92%E5%9B%BE%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/03-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%862-%E6%8F%92%E5%9B%BE%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</guid>
+        <link>https://motioneri.github.io//2019/11/08/03/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/03/</guid>
       </item>
     
       <item>
@@ -322,8 +365,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/02-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%861-%E5%AE%89%E8%A3%85%E6%A8%A1%E6%9D%BF%E5%87%BA%E9%97%AE%E9%A2%98/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/02-Jekyll-%E9%97%AE%E9%A2%98%E9%9B%861-%E5%AE%89%E8%A3%85%E6%A8%A1%E6%9D%BF%E5%87%BA%E9%97%AE%E9%A2%98/</guid>
+        <link>https://motioneri.github.io//2019/11/08/02/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/02/</guid>
       </item>
     
       <item>
@@ -370,8 +413,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/01-Welcome-to-Jekyll/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/01-Welcome-to-Jekyll/</guid>
+        <link>https://motioneri.github.io//2019/11/08/01/</link>
+        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/01/</guid>
       </item>
     
       <item>
@@ -411,6 +454,22 @@ encoding: utf-8
       
     
       
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
         
           <item>
             <title>TEST</title>
@@ -418,20 +477,6 @@ encoding: utf-8
             <link>https://motioneri.github.io//test.html</link>
           </item>
         
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
       
     
       
