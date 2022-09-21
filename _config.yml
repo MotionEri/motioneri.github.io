@@ -11,8 +11,10 @@ email:            info@mtc.plus
 description:      Mind The Creative, Commerce, China
 baseurl:          '' # The subpath of your site, e.g. /blog
 url:              'https://motioneri.github.io/' # The base hostname & protocol for your site
-github_username:  aspirethemes
-twitter_username: aspirethemes
+github_username:  MotionEri
+twitter_username: MotionEri
+weibo_username: MotionEri
+bilibili_username: MotionEri
 
 markdown:  kramdown
 permalink: pretty
