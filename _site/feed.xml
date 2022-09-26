@@ -3,12 +3,28 @@
   <channel>
     <title>MTC+</title>
     <description>Mind The Creative, Commerce, Charity, China</description>
-    <link>https://motioneri.github.io//</link>
-    <atom:link href="https://motioneri.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Jan 2020 16:08:24 +0800</pubDate>
-    <lastBuildDate>Thu, 02 Jan 2020 16:08:24 +0800</lastBuildDate>
+    <link>http://127.0.0.1:4000//</link>
+    <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 26 Sep 2022 20:09:21 +0800</pubDate>
+    <lastBuildDate>Mon, 26 Sep 2022 20:09:21 +0800</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
 
+    
+      <item>
+        <title>距离上次更新已经三年了</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;2022-09-26&lt;/h2&gt;
+
+&lt;p&gt;这三年发生很多有趣的事情&lt;/p&gt;
+
+&lt;p&gt;距离上次写blog又过去了三年了&lt;/p&gt;
+
+&lt;p&gt;人生有多少个三年，十年呢&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 26 Sep 2022 00:00:00 +0800</pubDate>
+        <link>http://127.0.0.1:4000//2022/09/26/01/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2022/09/26/01/</guid>
+      </item>
     
       <item>
         <title>测试tagging feature fixed</title>
@@ -35,9 +51,9 @@
 
 &lt;p&gt;另外在sidebar.html 再加一个unless&lt;/p&gt;
 
-&lt;p&gt;```&lt;/p&gt;
-
-&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;
+unless page.layout == &#39;tag_page&#39;
+&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;导航就不会出现tag page的链接了&lt;/p&gt;
 
@@ -58,8 +74,8 @@ Automatic tag page creation&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 30 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/30/01-test/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/30/01-test/</guid>
+        <link>http://127.0.0.1:4000//2019/12/30/01-test/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/12/30/01-test/</guid>
       </item>
     
       <item>
@@ -106,8 +122,8 @@ Automatic tag page creation&lt;/p&gt;
 
 </description>
         <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/29/02/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/02/</guid>
+        <link>http://127.0.0.1:4000//2019/12/29/02/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/12/29/02/</guid>
       </item>
     
       <item>
@@ -123,8 +139,8 @@ Automatic tag page creation&lt;/p&gt;
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 29 Dec 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/12/29/01/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/12/29/01/</guid>
+        <link>http://127.0.0.1:4000//2019/12/29/01/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/12/29/01/</guid>
       </item>
     
       <item>
@@ -243,8 +259,8 @@ _posts
 &lt;p&gt;完成了～&lt;/p&gt;
 </description>
         <pubDate>Sun, 10 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/10/01/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/10/01/</guid>
+        <link>http://127.0.0.1:4000//2019/11/10/01/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/10/01/</guid>
       </item>
     
       <item>
@@ -256,8 +272,8 @@ _posts
 &lt;p&gt;在本地可以生效，但是上传到Github 后缺不能跳转&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/05/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/05/</guid>
+        <link>http://127.0.0.1:4000//2019/11/08/05/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/08/05/</guid>
       </item>
     
       <item>
@@ -271,8 +287,8 @@ but you haven&#39;t included the `jekyll-paginate` gem
 &lt;p&gt;后来有搜到可能是一个bug，发生在windows环境里&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/04/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/04/</guid>
+        <link>http://127.0.0.1:4000//2019/11/08/04/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/08/04/</guid>
       </item>
     
       <item>
@@ -302,8 +318,8 @@ but you haven&#39;t included the `jekyll-paginate` gem
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/03/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/03/</guid>
+        <link>http://127.0.0.1:4000//2019/11/08/03/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/08/03/</guid>
       </item>
     
       <item>
@@ -365,8 +381,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/02/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/02/</guid>
+        <link>http://127.0.0.1:4000//2019/11/08/02/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/08/02/</guid>
       </item>
     
       <item>
@@ -413,8 +429,8 @@ encoding: utf-8
 
 </description>
         <pubDate>Fri, 08 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/08/01/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/08/01/</guid>
+        <link>http://127.0.0.1:4000//2019/11/08/01/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/08/01/</guid>
       </item>
     
       <item>
@@ -426,8 +442,8 @@ encoding: utf-8
 &lt;p&gt;还有很多地方需要调整呢&lt;/p&gt;
 </description>
         <pubDate>Thu, 07 Nov 2019 00:00:00 +0800</pubDate>
-        <link>https://motioneri.github.io//2019/11/07/01-First-Post/</link>
-        <guid isPermaLink="true">https://motioneri.github.io//2019/11/07/01-First-Post/</guid>
+        <link>http://127.0.0.1:4000//2019/11/07/01-First-Post/</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2019/11/07/01-First-Post/</guid>
       </item>
     
 
@@ -437,12 +453,16 @@ encoding: utf-8
       
     
       
+    
+      
+    
+      
         
           <item>
             <title>About</title>
             <description>&lt;p&gt;This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme&lt;/p&gt;
 </description>
-            <link>https://motioneri.github.io//about.html</link>
+            <link>http://127.0.0.1:4000//about.html</link>
           </item>
         
       
@@ -467,16 +487,6 @@ encoding: utf-8
     
       
     
-      
-    
-      
-        
-          <item>
-            <title>TEST</title>
-            <description>test test</description>
-            <link>https://motioneri.github.io//test.html</link>
-          </item>
-        
       
     
       
